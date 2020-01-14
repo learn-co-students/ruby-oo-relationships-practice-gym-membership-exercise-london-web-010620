@@ -6,7 +6,7 @@ class Membership
   def initialize(cost, gym, lifter)
     @cost = cost
     @gym = gym 
-    @lifter = lifter]
+    @lifter = lifter
     @@all << self 
   end
 
@@ -14,7 +14,7 @@ class Membership
     @@all 
   end 
 
-  
+
 
 
 
