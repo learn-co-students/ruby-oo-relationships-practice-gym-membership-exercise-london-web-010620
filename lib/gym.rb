@@ -17,12 +17,16 @@ class Gym
     Membership.all.select{|membership| membership.gym == self}
   end 
 
-  def gym_memberships
+  def gym_memberships_lifters 
+    gym_memberships.map{|membership| membership.lifter}
+  end 
     
 
+  
+
+  def combined_lift 
+    gym_memberships_lifters.map{|lifter| lifter.lift_total}.sum
   end 
-
-
 
 
 
